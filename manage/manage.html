@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台-折工大学图书馆</title>
+
+    <script src="../jquery/jquery-1.10.2.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="manage.css"/>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav aria-label="breadcrumb" style="position: relative; z-index:9999">
+    <ol class="breadcrumb" style="background-color: rgba(255,255,255,0.9)">
+        <li class="breadcrumb-item"><a href="../welcome/welcome.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Manage</li>
+    </ol>
+</nav>
+<div id="column_frame">
+    <div class="blank_block"></div>
+    <form method="post" action="manage.php">
+
+        <p><label class="column_name">借书管理</label>
+            <label>
+                <input placeholder="借书证" class="column_input" type="text" name="cno1"/> </label>
+            <label>
+                <input placeholder="书号" class="column_input" type="text" name="bno1"/> </label></p>
+
+        <p><label class="column_name">还书管理</label>
+            <label>
+                <input placeholder="借书证" class="column_input" type="text" name="cno2"/> </label>
+            <label>
+                <input placeholder="书号" class="column_input" type="text" name="bno2"/> </label></p>
+
+        <p><label class="column_name">借书证管理</label> <label>
+            <input placeholder="借书证号" class="column_input" style="width: 200px" type="text" name="cno3"/> </label></p>
+        <p>
+            <button type="button" class="column_name-1">单本入库</button>
+            <button type="button" class="column_name-1">批量入库</button>
+        </p>
+
+        <button class="button" type="submit" name="submit">操作</button>
+    </form>
+
+    <div id="result_frame">
+        <!--        <div class="blank_block"></div>-->
+    </div>
+</div>
+</body>
+</html>

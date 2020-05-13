@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书查询-折工大学图书馆</title>
+
+    <script type="text/javascript" src="search.php?action=test"></script>
+
+    <script src="../jquery/jquery-1.10.2.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="search.css"/>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    </link>
+    <!--    <style type="text/css"s-->
+
+</head>
+
+<body>
+<!--左侧可选栏目-->
+
+<nav aria-label="breadcrumb" style="position: relative; z-index:9999">
+    <ol class="breadcrumb" style="background-color: rgba(255,255,255,0.9)">
+        <li class="breadcrumb-item"><a href="../welcome/welcome.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Search</li>
+    </ol>
+</nav>
+<div id="column_frame">
+
+    <div class="blank_block"></div>
+    <form method="post" action="search.php">
+
+        <p><label class="column_name">书名</label> <label>
+            <input placeholder="包含" class="column_input" type="text" name="title"/> </label></p>
+        <p><label class="column_name">作者</label> <label>
+            <input placeholder="包含" class="column_input" type="text" name="author"/> </label></p>
+        <p><label class="column_name">出版社</label> <label>
+            <input placeholder="包含" class="column_input" type="text" name="press"/> </label></p>
+        <p><label class="column_name">类别</label> <label>
+            <input placeholder="类别" class="column_input" type="text" name="category"/> </label></p>
+        <p><label class="column_name">年份区间</label>
+            <label>
+                <input placeholder="最低" class="column_input-1" type="text" name="low_year"/> </label>
+            <label>
+                <input placeholder="最高" class="column_input-1" type="text" name="high_year"/> </label></p>
+        <p><label class="column_name">价格区间</label>
+            <label>
+                <input placeholder="最低" class="column_input-1" type="text" name="low"/> </label>
+            <label>
+                <input placeholder="最高" class="column_input-1" type="text" name="high"/> </label></p>
+
+        <button class="button" type="submit" name="submit">查询</button>
+    </form>
+
+    <div id="result_frame">
+    </div>
+
+</div>
+</body>
+</html>

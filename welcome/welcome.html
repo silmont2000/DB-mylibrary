@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--    标题-->
+    <meta charset="UTF-8">
+    <title>登录-折工大学图书馆</title>
+
+    <!--    css和js和php链接-->
+    <script src="../jquery/jquery-1.10.2.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="welcome.css"/>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+<div id="login_frame">
+
+    <!--    slogan-->
+    <div id="slogan">
+        <p style="font-size: 60px; letter-spacing: -10px; color: #403d40; font-family: 超世纪粗毛楷,sans-serif" ;>
+            折工大學圖書館歡迎您</p>
+    </div>
+
+    <!--    管理员入口-->
+    <div id="manager_login">
+        <p style="font-size: 25px; letter-spacing: 10px; color: #403d40; font-family: 超世纪粗毛楷, sans-serif">管理員入口</p>
+    </div>
+    <!--    用户和密码输入，表单-->
+    <form method="post" action="login.php">
+        <div class="form-group" style="width: 50%; margin: auto">
+            <label for="exampleInputEmail1" style="float: left">管理員ID</label>
+            <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="ID">
+        </div>
+        <div class="form-group" style="width: 50%; margin: auto">
+            <label for="exampleInputPassword1" style="float: left">密碼</label>
+            <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <!--        表单采集结束-->
+
+        <!--        管理员登录 提交表单-->
+        <div id="login_control">
+            <button type="submit" name="submit" id="btn_login">登錄</button>
+                <a id="forget_pwd" href="../forget_pwd.html">忘記密碼？</a>
+        </div>
+    </form>
+
+    <!--    查询图书入口-->
+    <div id="reader_login">
+        <p style="font-size: 25px; letter-spacing: 10px; color: #403d40; font-family: 超世纪粗毛楷, sans-serif">讀者入口</p>
+    </div>
+    <div class="login_control">
+        <a type="button" id="btn_search" href="../search/search.php">圖書查詢</a>
+    </div>
+
+</div>
+
+</body>
+</html>

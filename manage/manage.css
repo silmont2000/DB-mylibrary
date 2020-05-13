@@ -1,0 +1,127 @@
+body {
+    background-image: url("manage.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*以chrome为默认浏览器，改变input框内占位符为白色*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #cccccc;
+}
+
+::-webkit-scrollbar-track-piece:start {
+    /* Select the top half (or left half) or scrollbar track individually */
+}
+
+/*定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道
+ 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(70, 50, 60, 0.3);
+    border-radius: 3px;
+    background-color: #895763;
+}
+
+/*定义滑块
+ 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(201, 164, 187, 0.3);
+    background-color: #d6889b;
+}
+
+/*左侧操作栏，名称样式*/
+.column_name {
+    font-size: 14px;
+    font-family: 思源黑体, sans-serif;
+
+    width: 90px;
+    height: 42px;
+
+    line-height: 40px;
+    text-align: center;
+
+    color: white;
+    border: 0;
+    background-color: #362227;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+}
+
+/*输入框样式*/
+.column_input {
+    /*width: 95px;*/
+    height: 40px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    border: 0;
+    background-color: #895763;
+    border-radius: 5px;
+    float: left;
+}
+
+#column_frame {
+    width: 400px;
+    height: 100%;
+    padding: 3%;
+
+    position: fixed;
+    left: 3%;
+    top: 0;
+    bottom: 0;
+
+    background-color: rgba(240, 255, 255, 0.5);
+    text-align: center;
+}
+
+
+#result_frame {
+    width: 1000px;
+    height: 100%;
+    padding: 0 4%;
+    position: fixed;
+    right: 2%;
+    top: 0;
+    bottom: 0;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#insert_frame {
+    width: 1300px;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#column {
+    margin-top: 10px;
+    width: 500px;
+    height: 30px;
+}
+
+/*操作、入库、退出按钮样式*/
+.button {
+    margin-bottom: 20%;
+    width: 40%;
+    padding: 10px 3%;
+    text-align: center;
+    background-color: #362227;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}

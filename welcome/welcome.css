@@ -1,0 +1,119 @@
+/*背景图*/
+body {
+    background-image: url("wel_bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*右边整个半透明的底块*/
+#login_frame {
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: rgba(240, 255, 255, 0.5);
+    text-align: center;
+}
+
+/*段落格式*/
+form p > * {
+    display: inline-block;
+    vertical-align: central;
+    /*margin-top: 40%;*/
+}
+
+/*管理员用户名框离上面元素的距离*/
+#top_label {
+    margin-top: 5px;
+    float: bottom;
+}
+
+/*管理员登录按钮位置*/
+#manager_login {
+    margin-top: 5px;
+}
+
+/*slogan位置*/
+#slogan {
+    margin-top: 15%;
+}
+
+
+/*管理員登录样式*/
+#btn_login {
+    font-size: 14px;
+    font-family: 思源黑体, sans-serif;
+
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+
+    color: white;
+    background-color: #144c59;
+    border-radius: 5px;
+    border: 1px;
+    float: left;
+    margin-left: 140px;
+
+}
+
+/*读者入口位置*/
+#reader_login {
+    /*margin-top: 10%;*/
+    /*position: absolute;*/
+    /*margin: auto;*/
+}
+
+/*读者入口样式*/
+#btn_search {
+    font-size: 14px;
+    font-family: 思源黑体, sans-serif;
+
+    border-radius: 5px;
+    width: 200px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    background-color: #144c59;
+    border: 0px;
+    /*position: absolute;*/
+    /*left: 35%;*/
+    /*top: 75%;*/
+
+    margin: auto;
+}
+
+/*忘记密码*/
+#forget_pwd {
+    font-family: 思源黑体, sans-serif;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    /*margin: auto;*/
+    /*float: right;*/
+    margin-left:25% ;
+    position: relative;
+    top: 5px;
+}
+
+/*忘记密码hover*/
+#forget_pwd:hover {
+    color: #4b72ff;
+    text-decoration: underline;
+}
+
+/*按钮的整体padding*/
+#login_control {
+    padding: 20px 28px;
+    /*position: fixed;*/
+    /*top: 65%;*/
+}
